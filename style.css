@@ -2,6 +2,10 @@
     font-family: Open Sans;
 }
 
+h1, h2, h3 {
+    font-family: Playfair Display;
+}
+
 body {
     background: white;
     margin: 0;
@@ -28,7 +32,7 @@ nav {
 .nav-li {
     list-style-type: none;
     margin: 1vw 2vw;
-    font-size: 3vh;
+    font-size: 2.5vh;
     padding-right: 1vw;
 }
 
@@ -43,6 +47,7 @@ nav {
 }
 
 a {
+    font-family: Open Sans;
     text-decoration: none;
     cursor: pointer;
     color: white;
@@ -115,6 +120,8 @@ nav img {
 
 #mountain-container > h1 {
     align-self: center;
+    font-family: Playfair Display;
+    font-size: 48px;
 }
 
 #mountain-container > ul {
@@ -195,6 +202,7 @@ nav img {
 }
 
 .mountain-card a {
+    font-family: Open Sans;
     color: white;
     font-weight: 100;
 }
@@ -218,12 +226,13 @@ nav img {
 .stats {
     list-style-type: none;
     padding: 0;
+    font-size: 20px;
 }
 
 #user-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
 }
@@ -231,21 +240,21 @@ nav img {
 #form-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
 }
 
 #mountain-dropdown {
-    font-size:  20px;  
+    font-size:  18px;  
     border-style:  solid; 
     background:  #fff; 
     width:  auto; 
     color:  #000; 
-    font-weight:  600;
+    font-weight:  400;
 
 }
 
 #mountain-submit {
-    font-size: 20px;
+    font-size: 16px;
 }
