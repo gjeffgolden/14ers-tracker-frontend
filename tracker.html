@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14er Summit Registry</title>
+    <script src="tracker.js" defer></script>
+    <link href='style.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a id="summits-nav">My Summits</a>
+            </li>
+            <li class="nav-li">
+                <a href="/">Logout</a>
+            </li>
+        </ul>
+        <img id="logo-image" src="./images/mysummits-logo.jpg"> 
+    </nav>
+    <div id="top-container">
+        <div id="user-container"></div>
+            <ul class="stats"></ul>
+        <div id="form-container">
+            <h1>Add New Summit</h1>
+            <h4>You're a rockstar!</h4>
+            <form onsubmit="setTimeout(function(){window.location.reload();},10);">
+                <select id='mountain-dropdown' name='id'>
+                <input id='mountain-submit' name='mountain-submit' type='submit' value="Add Summit">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div id='summits-container'>
+        <div id="front"><h2>Front Range</h2></div>
+        <div id="sawatch"><h2>Sawatch</h2></div>
+        <div id="elk"><h2>Elks</h2></div>
+        <div id="san-juan"><h2>San Juans</h2></div>
+        <div id="sangre-de-cristo"><h2>Sangre de Cristo</h2></div>
+        <div id="tenmile-mosquito"><h2>Tenmile-Mosquito</h2></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+* {
+    font-family: Garamond;
+}
+
+body {
+    background: white;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+nav {
+    width: 100vw;
+    background: #008037;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-li {
+    list-style-type: none;
+    margin: 1vw 2vw;
+    font-size: 3vh;
+    padding-right: 1vw;
+}
+
+.nav-li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav-ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+nav img {
+    padding-right: 1vw;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    width: 500px;
+    height: 300px;
+    padding-bottom: 16px;
+    opacity: 0.8;
+    background-image: url('./images/wildflower-background.jpg');
+    background-size: cover;
+}
+
+#login-form {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+
+.login-input {
+    font-size:  16px; 
+    text-align: center;
+    padding:  20px 0px; 
+    height:  56px; 
+    border:  none; 
+    border-bottom:  solid 1px rgba(0,0,0,.1); 
+    background:  #fff; 
+    width:  auto; 
+    box-sizing:  border-box; 
+    transition:  all .3s linear; 
+    color:  #000; 
+    font-weight:  600;
+    -webkit-appearance:  none; 
+    opacity: 0.9;
+}
+
+#mountain-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#mountain-container > h1 {
+    align-self: center;
+}
+
+#mountain-container > ul {
+    align-self: center;
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#mountain-container > img {
+    align-self: center;
+    height: 75%;
+    width: 75%;
+}
+
+#conditions-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#conditions-form {
+    align-self: center;
+    width: 65%;
+    padding-bottom: 16px;
+}
+
+.textbox {
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    margin-top: 34px;
+    border: solid;
+    border-width: thin;
+    text-align: start;
+}
+
+.comment-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column;
+    align-items: flex-start;
+    align-self: center;
+    width: 65%;
+}
+
+#comments-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 96px;
+}
+
+#summits-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    width: auto;
+}
+
+#summits-container div {
+    width: 216px;
+}
+
+#summits-container h2 {
+    text-align: center;
+}
+
+.mountain-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fill;
+    border-top: solid;
+    border-color: white;
+    border-width: thin;
+    background-color: #008037;
+}
+
+.mountain-card a {
+    color: white;
+    font-weight: 100;
+}
+
+.mountain-card a:hover {
+    color: black;
+}
+
+.mountain-card button {
+    font-size: 10px;
+    margin-bottom: 0.5em;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.stats {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#mountain-dropdown {
+    font-size:  20px;  
+    border-style:  solid; 
+    background:  #fff; 
+    width:  auto; 
+    color:  #000; 
+    font-weight:  600;
+
+}
+
+#mountain-submit {
+    font-size: 20px;
+}
