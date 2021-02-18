@@ -9,7 +9,9 @@ const $conditionsForm = document.querySelector('#conditions-form')
 const $conditionsContainer = document.querySelector('#conditions-container')
 const $commentsContainer = document.querySelector('#comments-container')
 const $summitsNav = document.querySelector('#summits-nav')
+const $conditionsNav = document.querySelector('#conditions-nav')
 
+$conditionsNav.href = `/conditions.html?user_id=${userId}`
 $summitsNav.href = `/tracker.html?user_id=${userId}`
 
 fetch(`${mountainsURL}/${mountainId}`, {
@@ -42,8 +44,9 @@ function createCard(mountain) {
 
     $mountainStats.append($range, $elevation, $rank, $classRating)
 
-    $mountainContainer.prepend($name)
     $mountainContainer.append($image)
+    $mountainContainer.prepend($name)
+    
 }
 
 $conditionsForm.addEventListener('submit', (event) => {

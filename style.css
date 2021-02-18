@@ -134,8 +134,7 @@ nav img {
 
 #mountain-container > img {
     align-self: center;
-    height: 75%;
-    width: 75%;
+    width: 100vw;
 }
 
 #conditions-container {
@@ -214,8 +213,11 @@ nav img {
 }
 
 .mountain-card button {
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 0.5em;
+    background-color: #008037;
+    border-style: none;
+    color:white;
 }
 
 #top-container {
@@ -259,4 +261,24 @@ nav img {
 
 #mountain-submit {
     font-size: 16px;
+}
+
+.conditions-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-top: solid;
+    border-color: white;
+    border-width: thin;
+    background-color: #008037;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 100vw;
 }

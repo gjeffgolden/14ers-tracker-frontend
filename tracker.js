@@ -7,6 +7,7 @@ const $userContainer = document.querySelector('#user-container')
 const $form = document.querySelector('form')
 const $mountainDropdown = document.querySelector('#mountain-dropdown')
 const $summitsNav = document.querySelector('#summits-nav')
+const $conditionsNav = document.querySelector('#conditions-nav')
 const $front = document.querySelector('#front')
 const $sawatch = document.querySelector('#sawatch')
 const $elk = document.querySelector('#elk')
@@ -16,6 +17,7 @@ const $sanJuan = document.querySelector('#san-juan')
 const $summitsContainer = document.querySelector('#summits-container')
 
 $summitsNav.href = `/tracker.html?user_id=${id}`
+$conditionsNav.href = `/conditions.html?user_id=${id}`
 
 fetch(`${baseURL}/users/${id}`, {
     headers: {
