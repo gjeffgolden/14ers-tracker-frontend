@@ -13,6 +13,7 @@ const $elk = document.querySelector('#elk')
 const $sangreDeCristo = document.querySelector('#sangre-de-cristo')
 const $tenmileMosquito = document.querySelector('#tenmile-mosquito')
 const $sanJuan = document.querySelector('#san-juan')
+const $summitsContainer = document.querySelector('#summits-container')
 
 $summitsNav.href = `/tracker.html?user_id=${id}`
 
@@ -100,14 +101,17 @@ function renderCards(summit) {
         $deleteSummitButton.textContent = 'x'
 
         $deleteSummitButton.addEventListener('click', () => {
-            fetch(`${baseURL}/summits/${summit.id}`, {
-                method: 'DELETE',
-                headers: {
-                    'Authorization': `Bearer ${localStorage.token}`
-                }
-            })
-            .then(response => response.json())
-            setTimeout(() => {window.location.reload()},10)
+            let question = confirm("Are you sure you want to delete this peak?")
+            if (question == true) {
+                fetch(`${baseURL}/summits/${summit.id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${localStorage.token}`
+                    }
+                })
+                .then(response => response.json())
+                setTimeout(() => {window.location.reload()},10)
+            }
         })
 
         $cardDiv.append($name, $deleteSummitButton)
@@ -136,5 +140,8 @@ function renderCards(summit) {
         }
     }
 }
+
+
+
 
 
