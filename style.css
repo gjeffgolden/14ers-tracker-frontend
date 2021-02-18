@@ -80,6 +80,7 @@ nav img {
     opacity: 0.8;
     background-image: url('./images/wildflower-background.jpg');
     background-size: cover;
+    border-radius: 50%;
 }
 
 #login-form {
@@ -199,6 +200,7 @@ nav img {
     border-color: white;
     border-width: thin;
     background-color: #008037;
+    border-radius: 25px;
 }
 
 .mountain-card a {
