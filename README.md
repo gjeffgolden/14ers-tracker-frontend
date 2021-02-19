@@ -1,5 +1,4 @@
-# mySummits Frontend
-### Flatiron School Mod3 Project
+# mySummits Frontend (Flatiron School Mod3 Project)
 
 ## Purpose and Functionality
 The mySummits website allows a user to login and track their tick list of Colorado 14er summits. The main landing page is the user's personal summit log, which displays all of their summits as well as some basic statistics. From the summit tracker, a user can click on an individual mountain card or use the top navigation to view a peak's conditions updates and enter their own recent observations. These comments persist on the backend and are viewable to all users, with a username and time stamp attached.
@@ -36,7 +35,7 @@ switch (summit.mountain.range) {
         }
 ```
 
-##Future Features and Goals
+## Future Features and Goals
 1. Better sorting options for the mountain cards and dropdowns, to help navigating to specific summits easier.
 2. Registration of a new user.
 3. Refactoring, specifically the tracker.js file.
