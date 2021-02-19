@@ -8,9 +8,9 @@ const userId = queryParams.get('user_id')
 const $conditionsForm = document.querySelector('#conditions-form')
 const $conditionsContainer = document.querySelector('#conditions-container')
 const $commentsContainer = document.querySelector('#comments-container')
+
 const $summitsNav = document.querySelector('#summits-nav')
 const $conditionsNav = document.querySelector('#conditions-nav')
-
 $conditionsNav.href = `/conditions.html?user_id=${userId}`
 $summitsNav.href = `/tracker.html?user_id=${userId}`
 
@@ -36,6 +36,7 @@ function createCard(mountain) {
     const $image = document.createElement('img')
 
     $image.src = `${mountain.image}`
+    $image.alt = `Full-size image of ${mountain.name}`
     $name.textContent = mountain.name
     $elevation.textContent = mountain.elevation
     $rank.innerHTML = `Colorado Rank: ${mountain.rank} of 58`
@@ -54,8 +55,6 @@ $conditionsForm.addEventListener('submit', (event) => {
 
     const formData = new FormData(event.target)
     const conditionsText = formData.get('conditions')
-
-    console.log(conditionsText, mountainId)
     
     const newConditions = {
         conditions: conditionsText,
@@ -83,7 +82,6 @@ fetch(commentsURL, {
 })
     .then(response => response.json())
     .then(comments => {
-        console.log(comments)
         comments["comments"].forEach(comment => {
             renderComment(comment)
         })

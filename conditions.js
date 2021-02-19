@@ -67,5 +67,3 @@ document.querySelector('#summits-container').addEventListener('click', (event) =
         window.location.href = `/mountain.html?mountain=${event.target.id}&user_id=${id}`
     }
 })
-
-//banner image

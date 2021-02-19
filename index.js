@@ -1,8 +1,7 @@
 const usersURL = 'http://localhost:3000/users'
 const loginURL = 'http://localhost:3000/login'
-const $loginForm = document.querySelector('#login-form')
 
-$loginForm.addEventListener('submit', (event) => {
+document.querySelector('#login-form').addEventListener('submit', (event) => {
     event.preventDefault()
 
     const loginFormData = new FormData(event.target)
@@ -24,6 +23,6 @@ $loginForm.addEventListener('submit', (event) => {
     .then(data => {
         let token = data.token
         localStorage.setItem('token', token)
-        window.location.replace(`/tracker.html?user_id=${data.user.id}`)
+        window.location.href = `/tracker.html?user_id=${data.user.id}`
     })
 })

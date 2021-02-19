@@ -6,8 +6,6 @@ const id = searchParams.get('user_id')
 const $userContainer = document.querySelector('#user-container')
 const $form = document.querySelector('form')
 const $mountainDropdown = document.querySelector('#mountain-dropdown')
-const $summitsNav = document.querySelector('#summits-nav')
-const $conditionsNav = document.querySelector('#conditions-nav')
 const $front = document.querySelector('#front')
 const $sawatch = document.querySelector('#sawatch')
 const $elk = document.querySelector('#elk')
@@ -16,6 +14,8 @@ const $tenmileMosquito = document.querySelector('#tenmile-mosquito')
 const $sanJuan = document.querySelector('#san-juan')
 const $summitsContainer = document.querySelector('#summits-container')
 
+const $summitsNav = document.querySelector('#summits-nav')
+const $conditionsNav = document.querySelector('#conditions-nav')
 $summitsNav.href = `/tracker.html?user_id=${id}`
 $conditionsNav.href = `/conditions.html?user_id=${id}`
 
@@ -53,7 +53,7 @@ fetch(`${baseURL}/mountains`, {
     .then(mountains => {
         mountains.forEach(mountain => {
             const $option = document.createElement('option')
-            $option.textContent = mountain.name
+            $option.textContent = mountain.rank + "." + " " + mountain.name
             $option.value = mountain.id
             $mountainDropdown.append($option)
         })
@@ -138,7 +138,7 @@ function renderCards(summit) {
                 $sangreDeCristo.append($cardDiv)
             break
             default: 
-                console.log('ooops')
+                null
         }
     }
 }

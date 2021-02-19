@@ -145,14 +145,19 @@ nav img {
 #conditions-form {
     align-self: center;
     width: 65%;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
+    padding-top: 48px;
+}
+
+.form-label {
+    font-weight: 800;
 }
 
 .textbox {
     font-size: 14px;
     height: 40px;
     width: 100%;
-    margin-top: 34px;
+    margin-top: 0;
     border: solid;
     border-width: thin;
     text-align: start;
@@ -165,6 +170,10 @@ nav img {
     align-items: flex-start;
     align-self: center;
     width: 65%;
+}
+
+.comment-card p {
+    margin: 1vh;
 }
 
 #comments-container {
